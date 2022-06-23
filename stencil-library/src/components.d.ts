@@ -38,6 +38,10 @@ export namespace Components {
         "variant": 'primary' | 'secondary' | 'outlined' | 'text';
     }
     interface PocInputfield {
+        /**
+          * boolean check wether the input fields need to be reset
+          * @returns the clear boolean
+         */
         "clear": boolean;
         /**
           * example text for user input
@@ -129,6 +133,10 @@ declare namespace LocalJSX {
         "variant"?: 'primary' | 'secondary' | 'outlined' | 'text';
     }
     interface PocInputfield {
+        /**
+          * boolean check wether the input fields need to be reset
+          * @returns the clear boolean
+         */
         "clear"?: boolean;
         "onInputValue"?: (event: CustomEvent<string>) => void;
         /**
